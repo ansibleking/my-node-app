@@ -14,7 +14,7 @@ RUN apk add --update --no-cache \
 RUN npm install -g n8n
 
 # Create a non-root user and switch to it (security best practice)
-RUN adduser -D -u 1000 n8nuser
+RUN adduser -D -u 1001 n8nuser
 USER n8nuser
 
 # Set n8n configuration folder (optional)
